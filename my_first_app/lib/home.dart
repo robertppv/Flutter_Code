@@ -9,23 +9,22 @@ class Home extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          "My app bar",
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-          ),
+          "My perfect coffee",
+          style:
+              TextStyle(fontWeight: FontWeight.bold, color: Color(0xffFFF0D1)),
         ),
         toolbarHeight: 35,
-        backgroundColor: Colors.amber,
+        backgroundColor: const Color(0xFF664343),
         centerTitle: true,
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Container(
-            color: const Color.fromARGB(255, 67, 40, 24),
+            color: const Color(0xff795757),
             padding: const EdgeInsets.all(20),
             child: const Text(
-              "helopoo",
+              "I like my coffee:",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 color: Colors.white,
