@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_first_app/styled_button.dart';
+import 'package:my_first_app/styled_text.dart';
 
 class CoffeePrefs extends StatefulWidget {
   const CoffeePrefs({super.key});
@@ -42,7 +43,7 @@ class _CoffeePrefsState extends State<CoffeePrefs> {
       children: [
         Row(
           children: [
-            const Text("Strenght: "),
+            const StyledText(text: "Strenght:"),
             for (int i = 0; i < strenght; i++)
               Image.asset(
                 "assets/img/coffeeBean.png",
@@ -70,7 +71,7 @@ class _CoffeePrefsState extends State<CoffeePrefs> {
         ),
         Row(
           children: [
-            const Text("Sugar:      "),
+            const StyledText(text: "Sugar:"),
             for (int i = 0; i < sugar; i++)
               Image.asset(
                 'assets/img/sugarCube.png',
